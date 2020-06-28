@@ -12,6 +12,7 @@ public class Widget {
     private Long id;
     private String name;
     private String description;
+    private Integer version = 0;
 
     public Widget() {
     }
@@ -43,5 +44,13 @@ public class Widget {
 
     public void setDescription(String description) {
         this.description = description;
+    }
+
+    public Integer getVersion() {
+        return version;
+    }
+
+    public void setVersion(Integer version) {
+        this.version = version;
     }
 }
